@@ -1,0 +1,8 @@
+Chapter 1: AWS Shared Responsibility Model
+AWS has three different shared responsibility models:
+1. Infrastructure: This covers services such as Elastic Compute Cloud (EC2). In this model, customers are responsible for their data; platform, applicaiton, and IAM; operating system, network, and firewall configurations; client-side data encryption and data integrity authentication; server-side encryption (filesystem and/or data); and Network traffic protection (encryption/identity/integrity).
+2. Container: This covers services such as Elastic MapReduce (EMR), AWS Relational Database Service (RDS), and AWS Elastic Beanstalk, each of which is a service that resides on top of infrastructure. In this model, customers are responsible for their data, client-side data encryption and data integrity authentication; server-side encryption; and network traffic protection.
+3. Managed Services: This covers services such as Amazon Simple Queue Service (SQS), Amazon DynamoDB, and Amazon Simple Storage Service (S3), each of which is an abstract service that the customer is unable to access the underlying infrastrcutre or the container that they are maintained on. In thi model, the customer is only responsible for their data and client-side encryption.
+
+AWS Reponsibilities are called Security IN the Cloud, while customer responsibilities are called Security OF the Cloud.
+When it comes to auditors, AWS recommends directing them to the speific shared responsibility matrix that applies to the audited tool or functionality.
